@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./homepage.css">
+        <title>Pharmacy</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="top">
+                <header>
+                    <p class="head-title">Pharmacy</p>
+                </header>
+                <div class="navbar">
+                    <div class="main-menu"><a class="menu-title" href="">Home</a></div>
+                    <div class="main-menu"><a class="menu-title" href="">Our Medicines</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li> <a href="">Fever</a></li>
+                                <li><a href="">Muscle Pains</a></li>
+                                <li><a href="">Cold & Cough</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-menu"><a class="menu-title" href="">Health Care</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li> <a href="">Baby Care</a></li>
+                                <li><a href="">Skin Care</a></li>
+                                <li><a href="">Home Care</a></li>
+                                <li><a href="">Personal Care</a></li>
+                                <li><a href="">Pet Care</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-menu"><a class="menu-title" href="./labtest.html">Lab Test</a></div>
+                </div>
+            </div>
+            <div class="image-section">
+                <div id="fadein">
+                    <img class="anim-image" id="f5" src="./Animation/ani5.jpg" />
+                    <img class="anim-image" id="f4" src="./Animation/ani4.jpg" />
+                    <img class="anim-image" id="f2" src="./Animation/ani2.png" />
+                    <img class="anim-image" id="f1" src="./Animation/ani1.jpg" />
+                    <img class="anim-image" id="f3" src="./Animation/ani3.jpg" />
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="covid-care">
+                    <h3 class="section-title">Covid Care</h3>
+                    <div class="product-container">
+                        <div class="product">
+                            <p class="prod-title">Covid Test Kit</p>
+                            <img class="prod-image" src="./Products/c1.jpg">
+                            <p class="price">Rs. 40</p>
+                            <p class="price">Offer:Rs. 30/-</p>
+                            <button>Add to cart</button>
+                        </div>
+                        <div class="product">
+                            <p class="prod-title">Covid Essential</p>
+                            <img class="prod-image" src="./Products/c2.jpg">
+                            <p class="price">Rs. 240</p>
+                            <p class="price">Offer:Rs. 170/-</p>
+                            <button>Add to cart</button>
+                        </div>
+                        <div class="product">
+                            <p class="prod-title">Sanitizer Bottle</p>
+                            <img class="prod-image" src="./Products/c3.jpg">
+                            <p class="price">Rs. 99</p>
+                            <p class="price">Offer:Rs. 87/-</p>
+                            <button>Add to cart</button>
+                        </div>
+                        <div class="product">
+                            <p class="prod-title">Mask</p>
+                            <img class="prod-image" src="./Products/c4.jpg">
+                            <p class="price">Rs. 45</p>
+                            <p class="price">Offer:Rs. 30/-</p>
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="diabetes-care">
+                    <h3 class="section-title">Diabetes Care</h3>
+                    <div class="product-container">
+                        <div class="product">
+                            <p class="prod-title">BGR 34</p>
+                            <img class="prod-image" src="./Products/d1.jpg">
+                            <p class="price">Rs. 45</p>
+                            <p class="price">Offer:Rs. 30/-</p>
+                            <button>Add to cart</button>
+                        </div>
+                        <div class="product">
+                            <p class="prod-title">Dabar Chyawanprakash</p>
+                            <img class="prod-image" src="./Products/d2.jpg">
+                            <p class="price">Rs. 45</p>
+                            <p class="price">Offer:Rs. 30/-</p>
+                            <button>Add to cart</button>
+                        </div>
+                        <div class="product">
+                            <p class="prod-title">Colgate Sugarfree</p>
+                            <img class="prod-image" src="./Products/d3.jpg">
+                            <p class="price">Rs. 45</p>
+                            <p class="price">Offer:Rs. 30/-</p>
+                            <button>Add to cart</button>
+                        </div>
+                        <div class="product">
+                            <p class="prod-title">Unibic Cookies Sugar free</p>
+                            <img class="prod-image" src="./Products/d4.png">
+                            <p class="price">Rs. 35</p>
+                            <p class="price">Offer:Rs. 30/-</p>
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p>&copy; copyright. Only for demonstration purpose</p>
+            </footer>
+        </div>
+    </body>
+    <script>
+        var navbar = document.querySelector(".navbar");
+        var sticky = navbar.offsetTop;
+        const myFunction = () => {
+            console.log(window.pageYOffset);
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            }
+            else {
+                navbar.classList.remove("sticky");
+            }
+        }
+        window.onscroll = () => {
+            myFunction()
+        };
+
+
+    </script>
+
+</html>

@@ -1,0 +1,142 @@
+* {
+  font-family: serif;
+}
+.labtest-content {
+  height: 500px;
+  margin: 50px;
+  overflow-y: scroll;
+  display: flex;
+  /* border: 1px solid black; */
+  box-shadow: 0px 5px 15px #535252, 0px -5px 15px #535252;
+}
+.left-section {
+  width: 100%;
+}
+.right-section {
+  width: 100%;
+}
+.form-section {
+  margin: 30px;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section1,
+.section2 {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+}
+input {
+  text-decoration: none;
+  border: none;
+  padding: 10px;
+  border-bottom: 2px solid rgb(136, 133, 133);
+}
+.title {
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+}
+h3 {
+  font-weight: bold;
+}
+
+.radio-4 {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.date-time {
+  width: 100%;
+  text-align: start;
+}
+
+#my-time,
+#my-date {
+  width: 200px;
+  margin-bottom: 20px;
+}
+#my-image {
+  width: 590px;
+  height: 500px;
+  position: fixed;
+}
+.submit-reset {
+  width: 550px;
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+}
+.my-button {
+  background-color: rgb(133, 88, 184);
+  border-radius: 3px;
+  width: 100px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+}
+.section1 select {
+  padding: 10px;
+}
+@media (max-width: 1400px) {
+  .section1,
+  .section2 {
+    display: block;
+  }
+  #my-image {
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    object-fit: cover;
+  }
+}
+@media (max-width: 1199px) {
+  #my-image {
+    width: 410px;
+    height: 500px;
+    position: fixed;
+    object-fit: cover;
+  }
+}
+@media (max-width: 990px) {
+  #my-image {
+    width: 290px;
+    height: 500px;
+    position: fixed;
+    object-fit: cover;
+  }
+}
+@media (max-width: 768px) {
+  .labtest-content {
+    margin-top: 100px;
+  }
+  #my-image {
+    width: 100%;
+    position: relative;
+  }
+  .labtest-content {
+    height: 1000px;
+    flex-direction: column;
+    overflow-y: hidden;
+  }
+  .left-section {
+    height: 500px;
+    overflow: scroll;
+  }
+  .right-section {
+    height: 500px;
+  }
+
+  form {
+    position: absolute;
+  }
+  .submit-reset {
+    position: relative;
+    place-content: center;
+    margin-bottom: 50px;
+  }
+}
